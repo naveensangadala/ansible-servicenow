@@ -1,0 +1,23 @@
+---
+- hosts: vcenter-datastore
+  connection: local
+  vars_files:
+      - group_vars/vcenter-datastore
+  tasks:
+    - name: "Create an Incident"
+      snow_record:
+        username: snow username
+        password: snow user password
+        instance: mfxmspdev
+        state: present
+        table: incident
+        data:
+          short_description: "This is a test incident opened by Ansible"
+      register: output
+
+    - name: "say a message on your ansible host"
+      say:
+          msg: "the task has been completed and all is well"
+          voice: Zarvox
+      delegate_to: localhost
+ 

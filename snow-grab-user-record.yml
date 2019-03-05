@@ -1,0 +1,15 @@
+---
+- hosts: localhost
+  name: test connection snow
+  gather_facts: False
+  connection: local
+  tasks:
+  - name: "Grab a User record"
+    snow_record:
+      username: snow username
+      password: snow user password
+      instance: mfxmspdev
+      state: present
+      number: c5a41404db98ef00a47550d3
+      table: sys_user
+      lookup_field: c5a41404db98ef00a475

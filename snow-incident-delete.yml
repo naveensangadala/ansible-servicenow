@@ -1,0 +1,13 @@
+---
+- hosts: localhost
+  name: test connection snow
+  gather_facts: False
+  connection: local
+  tasks:
+  - name: "Update an Incident"
+    snow_record:
+      username: snow username
+      password: snow user password
+      instance: mfxmspdev
+      state: absent
+      number: incident number

@@ -1,0 +1,19 @@
+---
+- hosts: localhost
+  name: test connection snow
+  gather_facts: False
+  connection: local
+  tasks:
+  - name: "Create an Incident"
+    snow_record:
+      username: snow username
+      password: snow user password
+      instance: mfxmspdev
+      state: present
+      table: incident
+      data:
+        short_description: "This is a test incident opened by Ansible"
+    register: output
+
+  - debug:
+      msg: " incident number is :{{ output.record.number }}"

@@ -8,8 +8,8 @@
     snow_record:
       username: snow username
       password: snow user password
-      instance: mfxmspdev
+      instance: service-now instancename 
       state: present
-      number: c5a41404db98ef00a47550d3
+      number: xxxxxxx
       table: sys_user
-      lookup_field: c5a41404db98ef00a475
+      lookup_field: xxxxx

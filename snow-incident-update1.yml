@@ -13,7 +13,7 @@
       number: incident number
       data:
         description: "first update of my test incident"
-        Raised_for_client: "MFX-India Bangalore"
+        Raised_for_client: "Ansible users Bangalore"
         category: "General Inquiry"
         contact_type: Email
         assignment_group: "Service-Now Admin"

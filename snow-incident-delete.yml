@@ -8,6 +8,6 @@
     snow_record:
       username: snow username
       password: snow user password
-      instance: mfxmspdev
+      instance: mspdev
       state: absent
       number: incident number

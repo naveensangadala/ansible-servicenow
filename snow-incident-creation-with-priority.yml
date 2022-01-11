@@ -10,7 +10,7 @@
     snow_record:
       username: snow username
       password: snow user password
-      instance: mfxmspdev
+      instance: mspdev
       state: present
       data:
         short_description: "This is a test incident opened by Ansible"
